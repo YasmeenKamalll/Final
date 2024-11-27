@@ -25,7 +25,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        z-index: 100;
       }
 
       .logo {
@@ -62,9 +62,9 @@
       }
 
       .home-section img {
-        width: 400px;
-        height: auto;
         flex: 1;
+        max-width: 400px;
+        height: auto;
         border-radius: 8px;
       }
 
@@ -103,7 +103,7 @@
       }
 
       .project-item img {
-        width: 400px;
+        max-width: 400px;
         height: auto;
         border-radius: 8px;
       }
@@ -125,6 +125,43 @@
         line-height: 1.6;
       }
 
+      .education-section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #f8f8f8;
+      }
+
+      .education-section h3 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .education-section p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .resume-link {
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .resume-link:hover {
+        background-color: pink;
+      }
+
       @media (max-width: 768px) {
         .home-section, .project-item {
           flex-direction: column;
@@ -132,7 +169,7 @@
         }
 
         .home-section img, .project-item img {
-          width: 100%;
+          max-width: 100%;
         }
 
         .text-content h1, .project-item h3 {
@@ -156,6 +193,7 @@
       </nav>
     </header>
 
+    <!-- Home Section -->
     <section id="home" class="home-section">
       <div class="text-content">
         <h1>Hi, I'm Yasmeen Kamal</h1>
@@ -167,6 +205,7 @@
       <img src="Yasmeenpic1.png" alt="Yasmeen Kamal">
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="project-section">
       <h2>My Projects</h2>
 
@@ -175,8 +214,7 @@
         <div class="project-description">
           <h3>Minute Maid Redesign</h3>
           <p>
-            A creative redesign of the Minute Maid brand to enhance its visual appeal and modernity. This prototype
-            showcases a refreshing and inviting design aligned with the brand’s mission to deliver fresh and energizing products.
+            A creative redesign of the Minute Maid brand to enhance its visual appeal and modernity.
           </p>
         </div>
       </div>
@@ -186,7 +224,7 @@
         <div class="project-description">
           <h3>Documentary</h3>
           <p>
-            A compelling video project documenting an inspiring story through creative storytelling, stunning visuals, and emotional depth.
+            A compelling video project documenting an inspiring story through creative storytelling and stunning visuals.
           </p>
         </div>
       </div>
@@ -196,19 +234,17 @@
         <div class="project-description">
           <h3>Logo Designs</h3>
           <p>
-            A collection of creative logo designs showcasing branding solutions for businesses and organizations across various industries.
+            A collection of creative logo designs showcasing branding solutions for various businesses.
           </p>
         </div>
       </div>
     </section>
-     <section id="Education" class="Education-section">
-       <div class="Education-sect">
-        <div class="project-description">
-          <h3>Education and Certifications</h3>
-          <p>
-Igcse,highschool diploma          </p>
-        </div>
-       </div>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <h3>Education and Certifications</h3>
+      <p>Igcse, High School Diploma</p>
+      <a href="resume.pdf" class="resume-link" target="_blank">View My Resume</a>
     </section>
   </body>
 </html>
