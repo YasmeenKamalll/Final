@@ -7,9 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0-beta3/css/all.min.css">
     <style>
-      
-  
-      
       body {
         margin: 0;
         padding: 0;
@@ -22,7 +19,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 98%;
+        width: 100%;
         padding: 16px 20px;
         background-color: white;
         display: flex;
@@ -51,10 +48,11 @@
 
       .home-section {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         gap: 40px; 
-        padding: 100px 20px;
+        padding: 120px 20px;
         max-width: 1200px;
         margin: 0 auto;
       }
@@ -87,8 +85,7 @@
         padding: 60px 20px;
         background-color: #FFFFC5;
         width: 100%;
-        
-    }
+      }
 
       .project-section h2 {
         font-size: 28px;
@@ -165,6 +162,7 @@
         background-color: pink;
       }
 
+      /* Mobile-Friendly Design */
       @media (max-width: 768px) {
         .home-section, 
         .project-item {
@@ -174,6 +172,7 @@
 
         .home-section img, .project-item img {
           max-width: 100%;
+          margin-bottom: 20px;
         }
 
         .text-content h1, .project-item h3 {
@@ -183,7 +182,31 @@
         .text-content p, .project-item p {
           font-size: 16px;
         }
+
+        nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 60px;
+        }
+
+        nav a {
+          font-size: 20px;
+          margin: 10px 0;
+        }
+
+        .logo {
+          font-size: 28px;
+        }
       }
+
+      /* Tablet view */
+      @media (max-width: 1024px) {
+        .home-section {
+          flex-direction: column;
+        }
+      }
+
     </style>
   </head>
   <body>
@@ -200,7 +223,7 @@
       <div class="text-content">
         <h1>Hi, I'm Yasmeen Kamal</h1>
         <p>
-        I am a Global Business and Digital Arts student at the University of Waterloo currently living in Canada. Originally from the Middle East, I’ve spent my life moving between countries, which has shaped my perspective and inspired my love for design. I really enjoy designing logos and rebranding, finding joy in transforming concepts into visuals that truly capture a brand’s identity. My work is rooted in connecting people. My goal is to merge aesthetics with functionality to create meaningful products.
+          I am a Global Business and Digital Arts student at the University of Waterloo currently living in Canada. Originally from the Middle East, I’ve spent my life moving between countries, which has shaped my perspective and inspired my love for design. I really enjoy designing logos and rebranding, finding joy in transforming concepts into visuals that truly capture a brand’s identity. My work is rooted in connecting people. My goal is to merge aesthetics with functionality to create meaningful products.
         </p>
       </div>
       <img src="Yasmeenpic1.png" alt="Yasmeen Kamal">
@@ -214,22 +237,22 @@
         <div class="project-description">
           <h3>Minute Maid Redesign</h3>
           <p>
-Reposition Minute Maid as the ultimate drink for young athletes and active children, bringing the brand closer to sports culture and school-time moments. The focus is on making Minute Maid the go-to refreshment that fits seamlessly into the routines of kids at school, on the court, and in between practice sessions. The new tagline, "A Minute is All You Need," captures the essence of the quick energy boost and hydration that young athletes crave during their busy, active lives.          </p>
+            Reposition Minute Maid as the ultimate drink for young athletes and active children, bringing the brand closer to sports culture and school-time moments. The focus is on making Minute Maid the go-to refreshment that fits seamlessly into the routines of kids at school, on the court, and in between practice sessions. The new tagline, "A Minute is All You Need," captures the essence of the quick energy boost and hydration that young athletes crave during their busy, active lives.
+          </p>
         </div>
       </div>
 
-     <div class="project-item">
-  <a href="https://youtu.be/8tPDFaVSfeI" target="_blank">
-    <img src="LAsweetspot.png" alt="Documentary Project">
-  </a>
-  <div class="project-description">
-    <h3>Documentary</h3>
-    <p>
-      What started as a convenient study spot turned into a community hub, where the friendly baristas and relaxed environment made it feel comfortable and welcoming for many visitors. Positioned as a student-friendly haven, the cafe offers deals and discounts that make it a budget-friendly choice for those balancing academic life with finances. But it’s not just affordability that makes it special; it’s the community spirit and atmosphere that makes it so inviting. Here, students are not just simply customers but a part of a larger, familiar circle of faces that make the cafe more than just a place to grab a coffee. We’re curious and want to learn more about the cafe's story, the people behind the counter, and the regulars who frequent it. We hope to share how a simple cafe has become a gathering place, a home away from home,and a space where stories are shared, friendships are made, and memories are created.
-    </p>
-  </div>
-</div>
-
+      <div class="project-item">
+        <a href="https://youtu.be/8tPDFaVSfeI" target="_blank">
+          <img src="LAsweetspot.png" alt="Documentary Project">
+        </a>
+        <div class="project-description">
+          <h3>Documentary</h3>
+          <p>
+            Click the image to see a documentary I directed. Positioned as a student-friendly haven, the cafe offers deals and discounts that make it a budget-friendly choice for those balancing academic life with finances. It's not just affordability that makes it special; it's the community spirit and atmosphere that makes it so inviting.
+          </p>
+        </div>
+      </div>
 
       <div class="project-item">
         <img src="LOGO.png" alt="Logo Designs">
