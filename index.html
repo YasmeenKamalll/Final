@@ -18,7 +18,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 96%;
+        width: 98%;
         padding: 16px 20px;
         background-color: white;
         display: flex;
@@ -59,7 +59,7 @@
         text-align: left;
       }
 
-      .text-content {
+      .overall-text {
         flex: 1;
         text-align: left;
         padding-left: 100px;
@@ -71,19 +71,19 @@
         border-radius: 8px;
       }
 
-      .text-content h1 {
+      .overall-text h1 {
         font-size: 38px;
         color: #333;
         margin-bottom: 10px;
       }
 
-      .text-content p {
+      .overall-text p {
         font-size: 18px;
         color: #555;
         line-height: 1.6;
       }
 
-      .project-section, .new-section {
+      .project-section, .certification-section {
         width: 100%;
         padding: 60px 20px;
       }
@@ -130,38 +130,38 @@
         line-height: 1.6;
       }
 
-      .new-section {
+      .certification-section {
         background-color: pink;
         text-align: center;
       }
 
-      .new-section h3 {
+      .certification-section h3 {
         font-size: 28px;
         font-weight: 700;
         color: black;
         margin-bottom: 20px;
       }
 
-      .new-section table {
+      .certification-section table {
         width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
         margin-left: 10px;
       }
 
-      .new-section th,
-      .new-section td {
+      .certification-section th,
+      .certification-section td {
         padding: 15px;
         text-align: left;
         border: 1px solid #ddd;
       }
 
-      .new-section th {
+      .certification-section th {
         background-color: #f2f2f2;
         font-weight: bold;
       }
 
-      .new-section td {
+      .certification-section td {
         background-color: #fff;
       }
 
@@ -202,12 +202,12 @@
         background-color: pink;
       }
 
-      .no-link-style {
+      .link-style {
         color: #333;
         text-decoration: none;
       }
 
-      .no-link-style:hover {
+      .link-style:hover {
         color: pink;
       }
 
@@ -218,19 +218,19 @@
           text-align: center;
         }
 
-        .text-content h1, .project-item h3 {
+        .overall-text h1, .project-item h3 {
           font-size: 28px;
         }
 
-        .text-content p, .project-item p {
+        .overall-text p, .project-item p {
           font-size: 16px;
         }
 
-        .new-section table {
+        .certification-section table {
           font-size: 14px;
         }
 
-        .new-section th, .new-section td {
+        .certification-section th, .certification-section td {
           padding: 10px;
         }
       }
@@ -243,14 +243,14 @@
         <img src="YK logo.png" alt="Yasmeen Logo">
       </div>
       <nav>
-        <a href="#home" class="active">Home</a>
+        <a href="#home" class="">Home</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
       </nav>
     </header>
 
     <section id="home" class="home-section">
-      <div class="text-content">
+      <div class="overall-text">
         <h1>Hi, I'm Yasmeen Kamal</h1>
         <p>
           I am a Global Business and Digital Arts student at the University of Waterloo currently living in Canada. Originally from the Middle East, I’ve spent my life moving between countries, which has shaped my perspective and inspired my love for design. I really enjoy designing logos and rebranding, finding joy in transforming concepts into visuals that truly capture a brand’s identity. My work is rooted in connecting people. My goal is to merge aesthetics with functionality to create meaningful products.
@@ -295,7 +295,7 @@
       </div>
     </section>
 
-    <section class="new-section">
+    <section class="certification-section">
       <h3>Certification</h3>
       <table>
         <thead>
@@ -309,12 +309,12 @@
           <tr>
             <td>IGCSE</td>
             <td>A detailed project description goes here.</td>
-            <td><a href="IGCSE MARK grade 10.pdf" target="_blank" class="no-link-style">Click Here</a></td>
+            <td><a href="IGCSE MARK grade 10.pdf" target="_blank" class="link-style">Click Here</a></td>
           </tr>
           <tr>
             <td>Recommendation Letter</td>
             <td>Recommendation from previous Teachers.</td>
-            <td><a href="Yasmeen's Recommendation Letter.pdf" target="_blank" class="no-link-style">Click Here</a></td>
+            <td><a href="Yasmeen's Recommendation Letter.pdf" target="_blank" class="link-style">Click Here</a></td>
           </tr>
         </tbody>
       </table>
@@ -322,7 +322,7 @@
 
     <section class="education-section" id="experience">
       <h3>Experience</h3>
-      <a href="resume.pdf" class="resume-link" target="_blank">View my Resume</a>
+      <a href="CV.pdf" class="resume-link" target="_blank">View my Resume</a>
     </section>
   </body>
 </html>
