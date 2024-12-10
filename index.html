@@ -1,3 +1,9 @@
+<!-- 
+Yasmeen Kamal
+210729839
+
+All attributions ive put under the code aswell as some comments with CSS 
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,6 +36,7 @@
         font-size: 32px;
         font-weight: 700;
         color: #333;
+        float: left;
       }
 
       .logo img {
@@ -100,7 +107,7 @@
         margin-bottom: 20px;
       }
 
-      .project-item {
+      .projects {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -109,7 +116,7 @@
         text-align: left;
       }
 
-      .project-item img {
+      .projects img {
         max-width: 400px;
         height: auto;
         border-radius: 8px;
@@ -119,13 +126,13 @@
         text-align: center;
       }
 
-      .project-item h3 {
+      .projects h3 {
         font-size: 24px;
         color: #333;
         margin-bottom: 10px;
       }
 
-      .project-item p {
+      .projects p {
         font-size: 18px;
         color: #555;
         line-height: 1.6;
@@ -212,7 +219,7 @@
         color: pink;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 760px) {
         .home-section, 
         .project-item {
           flex-direction: column;
@@ -272,7 +279,7 @@
     <section id="projects" class="project-section">
       <h2>My Projects</h2>
 
-      <div class="project-item">
+      <div class="projects">
         <img src="Untitled.png" alt="Minute Maid Redesign">
         <div class="project-description">
           <h3>Minute Maid Redesign</h3>
@@ -282,7 +289,7 @@
         </div>
       </div>
 
-      <div class="project-item">
+      <div class="projects">
         <a href="https://youtu.be/8tPDFaVSfeI" target="_blank">
           <img src="LAsweetspot.png" alt="Documentary Project">
         </a>
@@ -293,8 +300,7 @@
           </p>
         </div>
       </div>
-
-      <div class="project-item">
+ <div class="projects">
         <img src="LOGO.png" alt="Logo Designs">
         <div class="project-description">
           <h3>Logo Design</h3>
